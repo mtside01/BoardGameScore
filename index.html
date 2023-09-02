@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボードゲーム得点表</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1659480142923-0cd01191e0e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    alt="">
+                            </figure>
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                ボードゲーム得点表
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1" id="ScoreDisplay"></span>
+                                </h1>
+
+                                <p class="subtitle">
+                                    下のボタンを押して得点を管理しよう
+                                </p>
+
+                                <label for="PlayerNum" class="label is-large is-inline">プレイヤー人数は？</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="PlayerNum">
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4" selected>4</option>
+                                    </select>
+                                </div>
+
+                                <label for="WinningScore" class="label is-large is-inline">何点先取？</label>
+                                <div class="select is-rounded">
+                                    <select name="" id="WinningScore">
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <footer class="card-footer vertical-footer">
+                            <div id="PlayerContainer" class="card-footer-item"></div>
+                            <button id="reset" class="is-danger button is-large ">リセット</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+<style>
+    .vertical-footer {
+        flex-direction: column;
+    }
+</style>
+
+</html>
